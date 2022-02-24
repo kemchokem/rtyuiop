@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="faq2RowModel" type="com.glosary.app.modules.faq.data.model.Faq2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageCard"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_57pxh"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_card_4"/>
+        <LinearLayout android:id="@+id/linearGroup275"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWhatIsMinimum"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{faq2RowModel.txtWhatIsMinimum}"
+                style="@style/txtMontserratregular16_1" tools:text="@string/msg_what_is_minimum"/>
+            <ImageView android:id="@+id/imageIcon"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginStart="@dimen/_66pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_icon_11"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

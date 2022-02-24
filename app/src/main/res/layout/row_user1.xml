@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="user1RowModel" type="com.glosary.app.modules.user.data.model.User1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearFrame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageFrame"
+            android:layout_height="@dimen/_24pxh"
+            android:layout_width="@dimen/_24pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_frame_5"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtFAQ"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_weight="0.62" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{user1RowModel.txtFAQ}"
+            style="@style/txtMontserratregular18_2" tools:text="@string/lbl_faq"/>
+    </LinearLayout>
+</layout>

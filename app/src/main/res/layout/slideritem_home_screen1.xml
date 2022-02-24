@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderGroup189Model" type="com.glosary.app.modules.homescreen.data.model.ImageSliderGroup189Model"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup790"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegreen_500cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearGroup789"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_38pxv"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_36pxv"
+            android:layout_weight="0.33" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:id="@+id/txtEverydayEssent"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{imageSliderGroup189Model.txtEverydayEssent}"
+                style="@style/txtMontserratregular20_2" tools:text="@string/msg_everyday_essent"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt10Off"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{imageSliderGroup189Model.txt10Off}"
+                style="@style/txtMontserratbold20" tools:text="@string/lbl_10_off"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="@dimen/_126pxh"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_199pxh"
+            android:scaleType="fitXY"
+            imageUrl="@{imageSliderGroup189Model.imageImage}" tools:src="@drawable/img_image_51"/>
+    </LinearLayout>
+</layout>

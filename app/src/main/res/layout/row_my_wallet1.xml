@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myWallet1RowModel" type="com.glosary.app.modules.mywallet.data.model.MyWallet1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <TextView android:ellipsize="end" android:id="@+id/txt17Oct2021"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{myWallet1RowModel.txt17Oct2021}"
+            style="@style/txtMontserratregular18_5" tools:text="@string/lbl_17_oct_2021"/>
+        <LinearLayout android:id="@+id/linearFrame"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_2">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearFrame1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_weight="0.89" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCashbackReceiv"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{myWallet1RowModel.txtCashbackReceiv}"
+                    style="@style/txtMontserratsemibold16_2" tools:text="@string/msg_cashback_receiv"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTransactionId"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{myWallet1RowModel.txtTransactionId}"
+                    style="@style/txtMontserratregular14_6" tools:text="@string/msg_transaction_id"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txt2"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_35pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_74pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_weight="0.11" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{myWallet1RowModel.txt2}"
+                style="@style/txtMontserratsemibold22" tools:text="@string/lbl_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="incorrectMobileNumber1RowModel" type="com.glosary.app.modules.incorrectmobilenumber.data.model.IncorrectMobileNumber1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageVector"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_10pxh"
+            android:layout_width="@dimen/_9pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_vector_4"/>
+        <ImageView android:id="@+id/imageVector1"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_10pxh"
+            android:layout_width="@dimen/_9pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_vector_5"/>
+    </FrameLayout>
+</layout>

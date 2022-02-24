@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="faq1RowModel" type="com.glosary.app.modules.faq.data.model.Faq1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageCard"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_57pxh"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_card_4"/>
+        <LinearLayout android:id="@+id/linearGroup272"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWhereDoYouDe"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.89" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{faq1RowModel.txtWhereDoYouDe}"
+                style="@style/txtMontserratregular16_1" tools:text="@string/msg_where_do_you_de"/>
+            <ImageView android:id="@+id/imageIcon"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginStart="@dimen/_152pxh"
+                android:layout_width="@dimen/_23pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_icon_8"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

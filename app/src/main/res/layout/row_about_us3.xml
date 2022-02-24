@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUs3RowModel" type="com.glosary.app.modules.aboutus.data.model.AboutUs3RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylegray_1">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtPrivacyPolicy"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_weight="0.84" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{aboutUs3RowModel.txtPrivacyPolicy}"
+            style="@style/txtMontserratregular16_1" tools:text="@string/lbl_privacy_policy"/>
+        <ImageView android:id="@+id/imageIcon"
+            android:layout_height="@dimen/_23pxh"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_224pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_21pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_icon_23"/>
+    </LinearLayout>
+</layout>

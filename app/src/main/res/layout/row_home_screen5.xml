@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeScreen5RowModel" type="com.glosary.app.modules.homescreen.data.model.HomeScreen5RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFrame"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStyledeep_orange_50cornerRadius">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_84pxh"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="@dimen/_126pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_image_62}" tools:src="@drawable/img_image_62"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearFrame1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:id="@+id/txtGranolaPremiu"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:text="@{homeScreen5RowModel.txtGranolaPremiu}"
+                style="@style/txtMontserratmedium14" tools:text="@string/msg_granola_premiu"/>
+            <LinearLayout android:id="@+id/linearFrame2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt2200"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.64"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{homeScreen5RowModel.txt2200}"
+                    style="@style/txtMontserratbold14_1" tools:text="@string/lbl_22_00"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt1Kg"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_weight="0.36"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{homeScreen5RowModel.txt1Kg}"
+                    style="@style/txtMontserratsemibold14_1" tools:text="@string/lbl_1_kg"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
