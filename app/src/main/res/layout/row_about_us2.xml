@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUs2RowModel" type="com.glosary.app.modules.aboutus.data.model.AboutUs2RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFrame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_138pxh"
+            android:layout_width="@dimen/_138pxh"
+            android:scaleType="fitXY" circular="@{true}"
+            imageRes="@{@drawable/img_image_11}" tools:src="@drawable/img_image_11"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearFrame1"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtJaneCooper"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{aboutUs2RowModel.txtJaneCooper}"
+                style="@style/txtMontserratsemibold18_2" tools:text="@string/lbl_jane_cooper"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtFounder"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{aboutUs2RowModel.txtFounder}"
+                style="@style/txtMontserratsemibold16_3" tools:text="@string/lbl_founder"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="faqVM" type="com.glosary.app.modules.faq.data.viewmodel.FaqVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearGroup304"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_500">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearFrame"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_334pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageIcon"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_width="@dimen/_13pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon_6"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFAQ"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_weight="0.79"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{faqVM.faqModel.txtFAQ}"
+                    style="@style/txtMontserratbold22_1" tools:text="@string/lbl_faq"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameGroup290"
+                android:layout_height="@dimen/_1026pxv" android:layout_width="match_parent">
+                <LinearLayout android:id="@+id/linearGroup287"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_1">
+                    <EditText
+                        android:background="@drawable/rectangle_bg_gray_100_radius_10"
+                        android:drawableEnd="@drawable/img_icon_7"
+                        android:drawablePadding="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:hint="@string/lbl_select_category"
+                        android:id="@+id/etSelectCategory"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_17pxv"
+                        android:paddingEnd="@dimen/_26pxh"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_20pxv"
+                        android:singleLine="true"
+                        android:text="@={faqVM.faqModel.etSelectCategoryValue}"
+                        android:textColorHint="@color/gray_500" style="@style/etSolidRounded"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:gravity="center_horizontal"
+                        android:id="@+id/recyclerGroup301"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_16pxh}" tools:itemCount="2" tools:listitem="@layout/row_faq1"/>
+                    <TextView android:id="@+id/txtPlacingAnOrde"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{faqVM.faqModel.txtPlacingAnOrde}"
+                        style="@style/txtMontserratregular14_3" tools:text="@string/msg_placing_an_orde"/>
+                    <FrameLayout android:id="@+id/frameGroup296"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_71pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_396pxh">
+                        <ImageView android:id="@+id/imageCard"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_71pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY" android:src="@drawable/img_card_5"/>
+                        <LinearLayout android:id="@+id/linearGroup274"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_11pxv"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:id="@+id/txtHowDoIKnowA"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.92"
+                                android:layout_width="0dp"
+                                android:text="@{faqVM.faqModel.txtHowDoIKnowA}"
+                                style="@style/txtMontserratregular16_1" tools:text="@string/msg_how_do_i_know_a"/>
+                            <ImageView android:id="@+id/imageIcon1"
+                                android:layout_height="@dimen/_21pxh"
+                                android:layout_marginBottom="@dimen/_14pxv"
+                                android:layout_marginStart="@dimen/_66pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="@dimen/_24pxh"
+                                android:scaleType="fitXY" android:src="@drawable/img_icon_10"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:gravity="center_horizontal"
+                        android:id="@+id/recyclerGroup302"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_16pxh}" tools:itemCount="2" tools:listitem="@layout/row_faq2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtNotListedYour"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{faqVM.faqModel.txtNotListedYour}"
+                        style="@style/txtMontserratsemibold20_1" tools:text="@string/msg_not_listed_your"/>
+                    <EditText
+                        android:background="@drawable/rectangle_bg_gray_100_radius_10"
+                        android:ellipsize="end"
+                        android:hint="@string/msg_write_your_ques"
+                        android:id="@+id/etWriteYourQues"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_31pxv"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_16pxv"
+                        android:singleLine="true"
+                        android:text="@={faqVM.faqModel.etWriteYourQuesValue}"
+                        android:textColorHint="@color/bluegray_400" style="@style/etSolidRounded_1"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnSubmit"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_50pxv"
+                        android:layout_marginBottom="@dimen/_135pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_30pxv"
+                        android:layout_width="@dimen/_208pxh"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_submit"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_submit"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTabbar"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent" android:orientation="vertical"/>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@+id/frameTabbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStylegreen_500">
+            <LinearLayout android:id="@+id/linearGroup14"
+                android:layout_gravity="top|center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageIcon2"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon1_1"/>
+                <ImageView android:id="@+id/imageIocn2"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_iocn2"/>
+                <ImageView android:id="@+id/imageIcon3"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_60pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon3_1"/>
+                <ImageView android:id="@+id/imageIcon4"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_60pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon4_1"/>
+                <ImageView android:id="@+id/imageIcon5"
+                    android:layout_height="@dimen/_25pxh"
+                    android:layout_marginEnd="@dimen/_30pxh"
+                    android:layout_marginStart="@dimen/_59pxh"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon5"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="details1RowModel" type="com.glosary.app.modules.details.data.model.Details1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_122pxh">
+        <LinearLayout android:id="@+id/linearGroup698"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameGroup700"
+                android:layout_height="@dimen/_115pxv" android:layout_width="@dimen/_122pxh">
+                <ImageView android:id="@+id/imageBackground"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_115pxh"
+                    android:layout_width="@dimen/_122pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_background"/>
+                <ImageView android:id="@+id/imageIcon"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon_53"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/imageGroup"
+                android:layout_height="@dimen/_47pxh"
+                android:layout_width="@dimen/_122pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_group"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGroup689"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <ImageView android:id="@+id/imageImage"
+                android:layout_height="@dimen/_85pxh"
+                android:layout_width="@dimen/_84pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image_48}" tools:src="@drawable/img_image_48"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPinapple"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{details1RowModel.txtPinapple}"
+                style="@style/txtMontserratbold16" tools:text="@string/lbl_pinapple"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore6VM" type="com.glosary.app.modules.explore6.data.viewmodel.Explore6VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup569"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearGroup568"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameGroup550"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh" android:layout_width="@dimen/_396pxh">
+                <ImageView android:id="@+id/imageGroup289"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_23pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_group289"/>
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" app:contentInsetStart="0dp">
+                    <LinearLayout android:id="@+id/linearFrame1"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtExplore"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.77"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{explore6VM.explore6Model.txtExplore}"
+                            style="@style/txtMontserratbold22" tools:text="@string/lbl_explore"/>
+                        <ImageView android:id="@+id/imageIcon"
+                            android:layout_height="@dimen/_23pxh"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_marginStart="@dimen/_282pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="@dimen/_26pxh"
+                            android:scaleType="fitXY" android:src="@drawable/img_icon_45"/>
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </FrameLayout>
+            <androidx.core.widget.NestedScrollView
+                android:clipToPadding="false"
+                android:fillViewport="true" android:gravity="start"
+                android:id="@+id/scrollViewScrollview"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_weight="1" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameGroup546"
+                    android:layout_height="1132dp" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearGroup521"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout android:id="@+id/linearFrame2"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtGroceries"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.65"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtGroceries}"
+                                style="@style/txtMontserratbold20_1" tools:text="@string/lbl_groceries"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeeAll"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_241pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.35"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtSeeAll}"
+                                style="@style/txtMontserratbold16_1" tools:text="@string/lbl_see_all"/>
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="center_horizontal"
+                            android:id="@+id/recyclerFrame3"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_explore7"/>
+                        <LinearLayout android:id="@+id/linearFrame4"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtVegetables"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.68"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtVegetables}"
+                                style="@style/txtMontserratbold20_1" tools:text="@string/lbl_vegetables"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeeAll1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_223pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.32"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtSeeAll1}"
+                                style="@style/txtMontserratbold16_1" tools:text="@string/lbl_see_all"/>
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="end"
+                            android:id="@+id/recyclerFrame5"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_explore8"/>
+                        <LinearLayout android:id="@+id/linearFrame6"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtFruits"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.53"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtFruits}"
+                                style="@style/txtMontserratbold20_1" tools:text="@string/lbl_fruits"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeeAll2"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_280pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.47"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtSeeAll2}"
+                                style="@style/txtMontserratbold16_1" tools:text="@string/lbl_see_all"/>
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="end"
+                            android:id="@+id/recyclerFrame7"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_explore9"/>
+                        <LinearLayout android:id="@+id/linearFrame8"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtDairyProducts"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.74"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtDairyProducts}"
+                                style="@style/txtMontserratbold20_1" tools:text="@string/lbl_dairy_products"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeeAll3"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_184pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.26"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtSeeAll3}"
+                                style="@style/txtMontserratbold16_1" tools:text="@string/lbl_see_all"/>
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="center_horizontal"
+                            android:id="@+id/recyclerGroup506"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_explore10"/>
+                        <LinearLayout android:id="@+id/linearFrame10"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_24pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtBakeryItems"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.72"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtBakeryItems}"
+                                style="@style/txtMontserratbold20_1" tools:text="@string/lbl_bakery_items"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeeAll4"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_202pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.28"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{explore6VM.explore6Model.txtSeeAll4}"
+                                style="@style/txtMontserratbold16_1" tools:text="@string/lbl_see_all"/>
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:gravity="end"
+                            android:id="@+id/recyclerFrame11"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:nestedScrollingEnabled="false"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            itemSpace="@{@dimen/_16pxh}"
+                            tools:itemCount="4" tools:listitem="@layout/row_explore11"/>
+                        <ImageView android:id="@+id/imageTabbar"
+                            android:layout_height="@dimen/_84pxh"
+                            android:layout_marginTop="@dimen/_29pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY" android:src="@drawable/img_tabbar"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearGroup523"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_4">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSubscribe"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_32pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{explore6VM.explore6Model.txtSubscribe}"
+                            style="@style/txtMontserratsemibold18_1" tools:text="@string/lbl_subscribe"/>
+                        <View android:background="@color/black_900"
+                            android:id="@+id/lineLine"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_1pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_390pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBuyOnce"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_23pxv"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_30pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{explore6VM.explore6Model.txtBuyOnce}"
+                            style="@style/txtMontserratsemibold18_1" tools:text="@string/lbl_buy_once"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageLayer"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" android:src="@drawable/img_layer"/>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="payment2RowModel" type="com.glosary.app.modules.payment.data.model.Payment2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageCard"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_57pxh"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_card_4"/>
+        <RadioButton android:buttonTint="@color/gray_502"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/rbGroup84" android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/msg_cash_on_deliver"
+            android:textColor="@color/gray_603"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_16pxh" android:textStyle="normal" tools:text="@string/msg_cash_on_deliver"/>
+    </FrameLayout>
+</layout>

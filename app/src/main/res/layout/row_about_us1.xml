@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUs1RowModel" type="com.glosary.app.modules.aboutus.data.model.AboutUs1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearGroup398"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.58" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageIcon"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_icon_19"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txt100OrganicF"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_weight="0.86" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{aboutUs1RowModel.txt100OrganicF}"
+                style="@style/txtMontserratsemibold14_1" tools:text="@string/msg_100_organic_f"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGroup399"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_71pxh"
+            android:layout_weight="0.42" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageIcon1"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY" android:src="@drawable/img_icon_20"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFastDelivery"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_weight="0.8" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{aboutUs1RowModel.txtFastDelivery}"
+                style="@style/txtMontserratsemibold14_1" tools:text="@string/lbl_fast_delivery"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

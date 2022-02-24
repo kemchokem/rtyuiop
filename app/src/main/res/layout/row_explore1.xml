@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore1RowModel" type="com.glosary.app.modules.explore.data.model.Explore1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFrame2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylegray_102cornerRadius">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_69pxh"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="@dimen/_69pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_image_23}" tools:src="@drawable/img_image_23"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGroup461"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtJaggeryPowder"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{explore1RowModel.txtJaggeryPowder}"
+                style="@style/txtMontserratmedium12" tools:text="@string/lbl_jaggery_powder"/>
+            <LinearLayout android:id="@+id/linearGroup460"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup459"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_weight="0.59"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt500G"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{explore1RowModel.txt500G}"
+                        style="@style/txtMontserratregular12_1" tools:text="@string/lbl_500_g"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{explore1RowModel.txt4}"
+                        style="@style/txtMontserratsemibold12" tools:text="@string/lbl_3"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageIcon"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginBottom="@dimen/_6pxv"
+                    android:layout_marginEnd="@dimen/_8pxh"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_icon_40"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

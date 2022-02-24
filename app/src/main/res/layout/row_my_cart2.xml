@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myCart2RowModel" type="com.glosary.app.modules.mycart.data.model.MyCart2RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageFrame"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_106pxh"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_frame_1"/>
+        <FrameLayout android:id="@+id/frameGroup249"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_85pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_368pxh">
+            <LinearLayout android:id="@+id/linearGroup199"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageDesign"
+                    android:layout_height="@dimen/_85pxh"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_design"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearGroup225"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.66"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFLAT"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{myCart2RowModel.txtFLAT}"
+                        style="@style/txtMontserratbold14" tools:text="@string/lbl_flat"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt50Off"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{myCart2RowModel.txt50Off}"
+                        style="@style/txtMontserratbold20" tools:text="@string/lbl_50_off"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtOnYourFirstO"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{myCart2RowModel.txtOnYourFirstO}"
+                        style="@style/txtMontserratregular12" tools:text="@string/msg_on_your_first_o"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtUseCouponCode"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{myCart2RowModel.txtUseCouponCode}"
+                        style="@style/txtMontserratregular12" tools:text="@string/msg_use_coupon_code"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageDesign1"
+                    android:layout_height="@dimen/_85pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="fitXY" android:src="@drawable/img_design"/>
+                <LinearLayout android:id="@+id/linearGroup200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30pxh"
+                    android:layout_weight="0.27"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageDesign2"
+                        android:layout_height="@dimen/_85pxh"
+                        android:layout_width="@dimen/_11pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_design"/>
+                    <ImageView android:id="@+id/imageDesign3"
+                        android:layout_height="@dimen/_85pxh"
+                        android:layout_marginStart="@dimen/_58pxh"
+                        android:layout_width="@dimen/_11pxh"
+                        android:scaleType="fitXY" android:src="@drawable/img_design"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearFrame"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCode"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{myCart2RowModel.txtCode}"
+                    style="@style/txtMontserratregular14_1" tools:text="@string/lbl_code"/>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtGETFIRST"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{myCart2RowModel.txtGETFIRST}"
+                    style="@style/txtMontserratbold16" tools:text="@string/lbl_getfirst"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
